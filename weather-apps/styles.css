@@ -128,7 +128,7 @@ body {
 }
 
 #temp::after {
-    content: "\00b0";
+    content: "\2103";
 }
 #temp::before {
     content: "Temp:\00a0\00a0";
@@ -204,7 +204,7 @@ body {
 }
 
 #otherDays .other-temp::after {
-    content: "\00b0";
+    content: "\2103";
 }
 
 #otherDays .other-humidity::after {
