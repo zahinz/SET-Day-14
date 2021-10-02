@@ -97,7 +97,7 @@ body {
 }
 
 #today2 {
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,6 +110,7 @@ body {
 #descWeather {
     font-size: 1.8rem;
     color: rgb(80, 80, 80);
+    margin-right: 30px;
 }
 
 #infoRight {
