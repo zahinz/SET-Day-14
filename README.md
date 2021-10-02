@@ -24,8 +24,11 @@
 
 ## What I learned today 💡
 
-### Title
-*  
+### Learn to fetch API
+* status code [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+* using fetch() [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+* inspect element > network > response
+
 
 ---
 

@@ -1,0 +1,241 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    transition: all 300ms;
+}
+
+html, body {
+    height: 100%; 
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+}
+
+#container {
+    height: 600px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.205);
+}
+
+#left {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6% 0;
+    box-shadow: 10px 0 0 #a3d4f7;
+    margin-right: 10px;
+}
+
+#today {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#day, #date, #location, #weather , #descWeather {
+    text-transform: capitalize;
+}
+
+#day {
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #a3d4f7
+}
+
+
+#dateTime {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.6rem;
+}
+
+#location {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+    width: 60%;
+}
+
+#time {
+    font-size: 0.9rem;
+    color: #60678b;
+    text-transform: lowercase;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 30px;
+
+}
+
+#todayWeatherIcon {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#today2 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    box-shadow: 5px 10px 0 #a3d4f7;
+}
+
+#descWeather {
+    font-size: 1.8rem;
+    color: rgb(80, 80, 80);
+}
+
+#infoRight {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#temp, #humidity {
+    font-size: 0.9rem;
+    color: rgb(80, 80, 80);
+    display: flex;
+    align-items: center;
+}
+
+#temp::after {
+    content: "\00b0";
+}
+#temp::before {
+    content: "Temp:\00a0\00a0";
+    color: gray;
+    font-size: 0.8rem;
+}
+
+#humidity::after {
+    content: "%";
+}
+#humidity::before {
+    content: "Humidity:\00a0\00a0";
+    color: gray;
+    font-size: 0.8rem;
+}
+
+#weather {
+    display: none;
+}
+
+#right {
+    height: 85%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#otherDays {
+    width: 85%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+.other-days {
+    color: gray;
+}
+
+.other-weather {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+#otherDayWeather {
+    width: 40%;
+}
+
+
+#otherDays #weatherImg {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#otherTempHumid {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.other-temp, .other-humidity {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+#otherDays .other-temp::after {
+    content: "\00b0";
+}
+
+#otherDays .other-humidity::after {
+    content: "%";
+}
+
+/* LOCATION */
+
+#bottomArea {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#bottomArea .other {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 8px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #60678b;
+    border-radius: 20px;
+}
+
+#bottomArea .title {
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 5px 5px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #60678b;
+}
+
+

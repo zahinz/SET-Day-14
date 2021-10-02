@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open weather API</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+        
+
+    <!-- FONT AWESOME PACK -->
+    <script src="https://kit.fontawesome.com/8ff303108c.js" crossorigin="anonymous"></script>
+
+
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- FAVICON -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+
+</head>
+<body>
+
+    <div id="app">
+        <div id="today">
+            <div id="leftToday">
+                <h3 id="locationNow">Kuala Lumpur</h3>
+                <h1 id="todayNow">Monday</h1>
+                <h2 id="weatherNow">Sunny</h2>
+            </div>
+            <div id="rightToday">
+
+            </div>
+        </div>
+        <div id="container">
+            <div id="smallContainer"></div>
+            <div id="smallContainer"></div>
+            <div id="smallContainer"></div>
+            <div id="smallContainer"></div>
+            <div id="smallContainer"></div>
+            <div id="smallContainer"></div>
+        </div>
+        <button onclick="currentApi(`Kuala Lumpur`)">Kuala Lumpur</button>
+        <button onclick="currentApi(`Pulau Pinang`)">Pulau Penang</button>
+        <button onclick="currentApi('Johor Bahru')">Johor Bharu</button>
+        <button onclick="currentApi('Sabah')">Sabah</button>
+        <button onclick="currentApi('Sarawak')">Sarawak</button>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    
+</body>
+</html>

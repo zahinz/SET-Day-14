@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather apps</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+        
+
+    <!-- FONT AWESOME PACK -->
+    <script src="https://kit.fontawesome.com/8ff303108c.js" crossorigin="anonymous"></script>
+
+
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- FAVICON -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body>
+
+    <div id="container">
+        <div id="left">
+            <div id="today">
+                <p id="location">0</p>
+                <div id="timeContainer">
+                    <p id="day">0</p>
+                    <div id="dateTime">
+                        <p id="date">0</p>
+                    </div>
+                </div>
+                <p id="time">0</p>
+            </div>
+            <img src="assets/clear-day.png" alt="" id="todayWeatherIcon">
+            <div id="today2">
+                <p id="weather">0</p>
+                <p id="descWeather">0</p>
+                <div id="infoRight">
+                    <p id="temp">0</p>
+                    <p id="humidity">0</p>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="otherDays">
+                <div id="otherDayWeather">
+                    <p class="other-days">0</p>
+                    <p class="other-weather">0</p>
+                </div>
+                <div id="otherTempHumid">
+                    <p class="other-temp">0</p>
+                    <p class="other-humidity">0</p>
+                </div>
+                <div id="weatherImg">
+                    <img id="weatherIcon" src="assets/clear-day.png" class="weather-icon" alt="" srcset="">
+                </div>
+            </div>
+            <div id="otherDays">
+                <div id="otherDayWeather">
+                    <p class="other-days">0</p>
+                    <p class="other-weather">0</p>
+                </div>
+                <div id="otherTempHumid">
+                    <p class="other-temp">0</p>
+                    <p class="other-humidity">0</p>
+                </div>
+                <div id="weatherImg">
+                    <img id="weatherIcon" src="assets/clear-day.png" class="weather-icon" alt="" srcset="">
+                </div>
+            </div>
+            <div id="otherDays">
+                <div id="otherDayWeather">
+                    <p class="other-days">0</p>
+                    <p class="other-weather">0</p>
+                </div>
+                <div id="otherTempHumid">
+                    <p class="other-temp">0</p>
+                    <p class="other-humidity">0</p>
+                </div>
+                <div id="weatherImg">
+                    <img id="weatherIcon" src="assets/clear-day.png" class="weather-icon" alt="" srcset="">
+                </div>
+            </div>
+            <div id="otherDays">
+                <div id="otherDayWeather">
+                    <p class="other-days">0</p>
+                    <p class="other-weather">0</p>
+                </div>
+                <div id="otherTempHumid">
+                    <p class="other-temp">0</p>
+                    <p class="other-humidity">0</p>
+                </div>
+                <div id="weatherImg">
+                    <img id="weatherIcon" src="assets/clear-day.png" class="weather-icon" alt="" srcset="">
+                </div>
+            </div>
+            <div id="otherDays">
+                <div id="otherDayWeather">
+                    <p class="other-days">0</p>
+                    <p class="other-weather">0</p>
+                </div>
+                <div id="otherTempHumid">
+                    <p class="other-temp">0</p>
+                    <p class="other-humidity">0</p>
+                </div>
+                <div id="weatherImg">
+                    <img id="weatherIcon" src="assets/clear-day.png" class="weather-icon" alt="" srcset="">
+                </div>
+            </div>
+            <div id="otherDays">
+                <div id="otherDayWeather">
+                    <p class="other-days">0</p>
+                    <p class="other-weather">0</p>
+                </div>
+                <div id="otherTempHumid">
+                    <p class="other-temp">0</p>
+                    <p class="other-humidity">0</p>
+                </div>
+                <div id="weatherImg">
+                    <img id="weatherIcon" src="assets/clear-day.png" class="weather-icon" alt="" srcset="">
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div id="bottomArea">
+        <p class="title">Location</p>
+        <p class="other" onclick="switchLocation('Kuala Lumpur')">Kuala Lumpur</p>
+        <p class="other" onclick="switchLocation('Johor Bahru')">Johor Bharu</p>
+        <p class="other" onclick="switchLocation('Ipoh')">Ipoh</p>
+        <p class="other" onclick="switchLocation('Pulau Pinang')">Pulau Pinang</p>
+        <p class="other" onclick="switchLocation('Sabah')">Sabah</p>
+        <p class="other" onclick="switchLocation('Sarawak')">Sarawak</p>
+    </div>
+
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    
+</body>
+</html>
